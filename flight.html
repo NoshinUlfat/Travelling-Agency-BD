@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travelling agency BD 
+            Booking Page</title> 
+        <style>
+            body{   
+                 background: rgba(0,0,0,0.5);
+                 background-image: url("images/transport/flight.jpg");
+                 background-repeat: no-repeat;
+                 background-size:auto; 
+                 width: 100%;
+                 height: 100%;
+            }
+            .wrapper{
+                position: absolute;
+                top: 7%;
+                left: 15%;          
+            }
+            .wrapper h3{
+                padding: 0;
+                margin: 0;
+                color: #fff;
+            }
+            .logo_box{
+                position: absolute;
+                top:0%;
+                left: 88%;
+                height: 150px;
+                width: 150px;
+                background: rgba(0, 0, 0, 0);
+            }
+            .t_dropdown{
+                position: relative;
+                display: inline-block;
+            }
+            .t_dropdown-content{
+                display: none;
+                position: absolute;
+                right: 100%;
+                background-color: whitesmoke;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .t_dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .t_dropdown-content a:hover {background-color: lightgray;}
+
+            .t_dropdown:hover .t_dropdown-content {
+                display: block;
+            }
+            .opacity_box1{
+                position: absolute;
+                background: rgba(0,0,0,0.5);
+                top:0%;
+                left: 0%;
+                width:200px;
+                height: 752px;
+            }
+            .opacity_box_heading{
+                position: absolute;
+                background: rgba(0,0,0,0.3);
+                top:7%;
+                left: 20%;
+                width:1150px;
+                height: 650px;
+            }
+            .text_h{
+                color: white;
+            }
+            .text_h:hover{
+                color: darkgray;
+            }
+            input{
+                background: rgba(0,0,0,0.5);
+                border: none;
+                position: relative;
+                display: inline;
+                outline: none;
+                margin: 0 auto;
+                padding: 10px;
+                color: white;
+            }
+            .b_button {
+                position: absolute;
+                left:39%;
+                background-color: gainsboro;
+                border: none;
+                font-weight: bold;
+                color: black;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .b_button:hover{
+                background-color: darkgray;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+             <div class="logo_box"><img src="images/logo9.png"  style="width: 170px"></div>
+            <div class="opacity_box_heading">
+                <p>
+                    <br><br><br><br>
+                    <font size="6" style="margin-left: 80px; color:white; font-weight: bold">Search For Your Flight</font>
+                    <br><br><br>
+                    <font size="5" style="margin-left: 80px; color:white; font-weight: bold">Place Name :</font>
+                    <font size="5" style="margin-left: 50px; color: white">
+                    <input type="text" name="place" placeholder="Enter place name" size="40px 10px" maxlength="50" id="place" >
+                    </font>
+                    
+                    <br><br>
+                    
+                    <font size="5" style="margin-left: 80px; color:white; font-weight: bold">Flying From :</font>
+                    <font size="5" style="margin-left: 42px; color: white">
+                    <input type="text" name="flying_from" placeholder="Flying From" size="30px 10px" maxlength="40" id="flying_from" >
+                    </font>
+                    <font size="5" style="margin-left: 40px; color:white; font-weight: bold">Flying to :</font>
+                    <font size="5" style="margin-left: 75px; color: white">
+                    <input type="text" name="flying_to" placeholder="Flying to" size="30px 10px" maxlength="40" id="flying_to" >
+                    </font>
+                    
+                    <br><br>
+                    
+                    <font size="5" style="margin-left: 80px; color:white; font-weight: bold">Departing :</font>
+                    <font size="5" style="margin-left: 67px; color: white">
+                    <input type="date" name="departing" placeholder="Enter " size="30px 10px" maxlength="40" id="departing" >
+                    </font>
+                    
+                    <br><br>
+                    
+                    <font size="5" style="margin-left: 80px; color:white; font-weight: bold">Adult :</font>
+                    <font size="5" style="margin-left: 110px; color: white">
+                    <input type="text" name="adult" placeholder="Enter adult member no" size="17px 10px" maxlength="40" id="adult" >
+                    </font>
+                    <font size="5" style="margin-left: 130px; color:white; font-weight: bold">Child(0-11 yrs) :</font>
+                    <font size="5" style="margin-left: 10px; color: white">
+                    <input type="text" name="child" placeholder="Enter child member no" size="17px 10px" maxlength="40" id="child" >
+                    </font>
+                    
+                    <br><br>
+                    
+                    <font size="5" style="margin-left: 80px; color:white; font-weight: bold">Class:</font>
+                    <select id="class" style=" margin-left: 120px;
+                                              width: 180px; background: rgba(0,0,0,0.5); color: white; padding: 16px; font-size: 16px; border:4px double white; cursor: pointer;">   
+                            <option value="1">Economy Class</option>
+                            <option value="2">Premium Economy Class</option>
+                            <option value="3">Business Economy Class</option>
+                            <option value="4">Business Class</option>
+                            <option value="5">First Class</option>
+                        </select>
+                    
+                    <font size="5" style="margin-left: 110px; color:white; font-weight: bold">Nationality :</font>
+                    <font size="5" style="margin-left: 50px; color: white">
+                    <input type="text" name="nationality" placeholder="Enter your nationality" size="40px 10px" maxlength="40" id="nationality" >
+                    </font>
+                    
+                    <br><br>
+                    
+                   
+                </p>
+                <a href="booking.html">
+                    <div class="b_button">
+                        <center>Search Flight</center>
+                    </div>    
+                </a> 
+            </div>
+            <div class="opacity_box1">
+               <div class="wrapper">
+               <h3>
+                   <a href="main.html"><span style="color: white ;margin-right: 1em">
+                      <div class="text_h">Home</div>
+                   </span></a>
+                   <p></p>
+                   <span style="margin-right: 1em;margin-: 2em">
+                       <div class="t_dropdown">
+                       <div class="text_h">
+                           Tours
+                           <div class="t_dropdown-content" style="left:0;">
+                            <a href="tours.html">Places</a>
+                            <a href="activities.html">Activities</a>
+                           </div>
+                        </div>
+                       </div>
+                       </span> 
+                   <p></p>
+                   <a href="hotels.html"><span style="margin-top: 2em; margin-right: 1em">
+                       <div class="text_h">Hotels</div>
+                       </span></a>
+                   <p></p>
+                   <a href="packages.html"><span style="margin-right: 1em">
+                       <div class="text_h">Packages</div>
+                       </span></a>
+                   <p></p>
+                   <a href="login.html"><span style="margin-right: 1em">
+                       <div class="text_h">Book</div>
+                       </span></a>
+                   <p></p>
+                   <a href="blog.html"><span style="margin-right: 1em">
+                       <div class="text_h">Blog</div>
+                       </span></a>
+                   <p></p>
+                   <a href="about.html"><span style="margin-right: 1em">
+                       <div class="text_h">About</div>
+                       </span></a>
+                   <p></p>
+                   <a href="connect.html"><span style="color: white;margin-right: 1em">
+                       <div class="text_h">Contact</div>
+                   </span></a>
+               </h3>
+                </div>
+            </div>
+    </body>
+</html>

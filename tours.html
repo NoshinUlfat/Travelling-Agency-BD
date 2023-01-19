@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travelling agency BD Tour Page</title> 
+        <link rel="stylesheet" href="tours.css">
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked{color: orange;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+               <div class="opacity_box_heading">
+                <p>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <font size="11" style="margin-left: 140px; color:white; font-weight: bold">Places For You..</font>
+                </p>
+            </div>
+            <div class="logo_box"><img src="images/logo9.png"  style="width: 170px"></div>
+            <div class="opacity_box1">
+               <div class="wrapper">
+               <h3>
+                   <a href="main.html"><span style="color: white ;margin-right: 1em">
+                      <div class="text_h">Home</div>
+                   </span></a>
+                   <p></p>
+                   <span style="margin-right: 1em;margin-: 2em">
+                       <div class="t_dropdown">
+                       <div class="text_h">
+                           Tours
+                           <div class="t_dropdown-content" style="left:0;">
+                            <a href="tours.html">Places</a>
+                            <a href="activities.html">Activities</a>
+                           </div>
+                        </div>
+                       </div>
+                       </span> 
+                   <p></p>
+                   <a href="hotels.html"><span style="margin-top: 2em; margin-right: 1em">
+                       <div class="text_h">Hotels</div>
+                       </span></a>
+                   <p></p>
+                   <a href="packages.html"><span style="margin-right: 1em">
+                       <div class="text_h">Packages</div>
+                       </span></a>
+                   <p></p>
+                   <a href="login.html"><span style="margin-right: 1em">
+                       <div class="text_h">Book</div>
+                       </span></a>
+                   <p></p>
+                   <span style="margin-right: 1em">
+                       <div class="text_h">Blog</div>
+                   </span>
+                   <p></p>
+                   <a href="about.html"><span style="margin-right: 1em">
+                       <div class="text_h">About</div>
+                       </span></a>
+                   <p></p>
+                   <a href="connect.html"><span style="color: white;margin-right: 1em">
+                       <div class="text_h">Contact</div>
+                   </span></a>
+               </h3>
+                </div>
+            </div>
+            <div class="opacity_box2"></div>
+        </div>
+        
+        
+        <div class="background_box">
+            <div class="background_left_box">
+                <div class="selection_box_outside">
+                    <p>
+                        <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Select Your Tour</font>
+                         <font size="3" style="margin-left: 5px; color:white; font-weight: bold">(All over the world)</font>
+                        <br><br>
+                        <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Select Place</font>
+                      <br>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;"> 
+                            <option value="7000">None</option>
+                            <option value="500">America</option>
+                            <option value="500">Bangladesh</option>
+                            <option value="7000">Egypt</option>
+                            <option value="1000">England</option>
+                            <option value="2000">Greece</option>
+                            <option value="5000">India</option>
+                            <option value="7000">Japan</option>
+                            <option value="10000">Maldives</option>
+                            <option value="7000">Nepal</option>
+                            <option value="7000">Thailand</option>
+                        </select>
+                        
+                        <br><br><br>
+                          <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Price Range</font>
+                        <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price From:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">   
+                            <option value="500">None</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                        </select>
+                            <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price To:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">      
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
+                        </select>
+                        
+                       <br><br><br>
+                        
+                                  <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Review Rating</font>
+                    <br>
+                    <label ><input type="checkbox" checked="checked" name=="rating" value="five_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="four_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="three_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="two_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="one_star">
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                
+                   
+                        
+                        <br><br>
+                    <div class="button">Find Place</div>
+                    </p>
+                
+                </div>       
+       
+                 <div class="selection_box_outside2">
+                                       <p>
+                        <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Select Your Tour</font>
+                         <font size="3" style="margin-left: 5px; color:white; font-weight: bold">(In the country)</font>
+                        <br><br>
+                         <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Select Division</font>
+                    <br>
+                    <font size="4" style="margin-left: 5px; color:white; font-weight: bold"> For One Day Trip </font>
+                        
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">      
+                            <option value="1000">None</option>
+                            <option value="2000">Barishal</option>
+                            <option value="5000">Chittagong</option>
+                            <option value="7000">Dhaka</option>
+                            <option value="10000">Khulna</option>
+                            <option value="15000">Mymensingh</option>
+                            <option value="15000">Rajshahi</option>
+                            <option value="15000">Rangpur</option>
+                            <option value="15000">Sylhet</option>
+                        </select>
+                        
+                        <br><br><br>
+                          <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Price Range</font>
+                        <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price From:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">   
+                            <option value="500">None</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                        </select>
+                            <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price To:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">      
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
+                        </select>
+                        
+                       <br><br><br>
+                        
+                                  <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Review Rating</font>
+                    <br>
+                    <label ><input type="checkbox" checked="checked" name=="rating" value="five_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="four_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="three_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="two_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="one_star">
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                        
+                  
+                        <br><br>
+                    <div class="button">Find Place</div>
+                    </p>
+                 </div>
+            </div>
+            
+    
+        <div class="background_right_box">
+            <p>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Top Visited Places</center></font>
+                <br><br><br>
+            </p>
+         
+            <div class="background_right_ash_box1">
+            <div class="background_right_ash_box1_2">
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/sent%20martin.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Sent Martin</font>
+                    <br><br>
+                    <font size="4" style="color: white">Bangladesh</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/phuket.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Phuket</font>
+                    <br><br>
+                    <font size="4" style="color: white">Thailand</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/sundarban.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Sundarban</font>
+                    <br><br>
+                    <font size="4" style="color: white">Bangladesh</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/tajmahal.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Taj Mahal</font>
+                    <br><br>
+                    <font size="4" style="color: white">India</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Bichanakandi.JPG" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Bichanakandi</font>
+                    <br><br>
+                    <font size="4" style="color: white">Bangladesh</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/chitwan%20national%20park.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Chitwan National Park</font>
+                    <br><br>
+                    <font size="4" style="color: white">Nepal</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/meeru%20island.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Meru Island</font>
+                    <br><br>
+                    <font size="4" style="color: white">Maldieves</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/mount%20fuji.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Mount Fuji</font>
+                    <br><br>
+                    <font size="4" style="color: white">Japan</font></p>
+                </div>
+            </div>
+    </div>
+    <div>
+                </div></div>
+            
+            
+            
+              <p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>One Day Trip</center></font>
+                <br><br><br>
+            </p>
+            
+            <div class="background_right_ash_box2">
+            <div class="background_right_ash_box2_2">
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/padma%20pukur.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Padma Pukur</font>
+                    <br><br>
+                    <font size="4" style="color: white">Barishal</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/patenga%20sea%20beach.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Patenga Sea Beach</font>
+                    <br><br>
+                    <font size="4" style="color: white">Chittagong</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/ahsan%20manzil.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Ahsan Manzil</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/kuakata%20sea%20beach.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Kuakata Sea Beach</font>
+                    <br><br>
+                    <font size="4" style="color: white">Khulna</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Shashi%20Lodge.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Shashi Lodge</font>
+                    <br><br>
+                    <font size="4" style="color: white">Mymensingh</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/padma%20garden.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Padma Garden</font>
+                    <br><br>
+                    <font size="4" style="color: white">Rajshahi</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/tajhat%20palace.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Tajhat Palace</font>
+                    <br><br>
+                    <font size="4" style="color: white">Rangpur</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/lakkatura.png" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Lakkatura Tea Garden</font>
+                    <br><br>
+                    <font size="4" style="color: white">Sylhet</font></p>
+                </div>
+            </div>
+                </div>
+        </div>
+        
+        
+            
+            <p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Our Preference</center></font>
+                
+                <font size="5" style="margin-left: 5px; color:brown; font-weight: bold">
+                    <center>In The Country</center>
+                </font>
+                <br>
+            </p>
+           
+            <div class="background_right_ash_box3">
+            <div class="background_right_ash_box3_2">
+                <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/cox's_bazar.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Cox's Bazar</font>
+                    <br><br>
+                    <font size="4" style="color: white">Chittagong</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/him%20chari.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Him Chari</font>
+                    <br><br>
+                    <font size="4" style="color: white">Chittagong</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/Jaflong-Travel.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Jaflong</font>
+                    <br><br>
+                    <font size="4" style="color: white">Sylhet</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/kaptai-lake.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Kaptai Lake</font>
+                    <br><br>
+                    <font size="4" style="color: white">Chittagong</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/Madhabkunda_Waterfall_2.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Madhabkunda Waterfall</font>
+                    <br><br>
+                    <font size="4" style="color: white">Sylhet</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/ratargul.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Ratargul</font>
+                    <br><br>
+                    <font size="4" style="color: white">Sylhet</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/sajek_valley.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Sajek Valley</font>
+                    <br><br>
+                    <font size="4" style="color: white">Khagrachari</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/shat%20gombuj%20mosqueue.JPG" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Shat Gambuj Mosque</font>
+                    <br><br>
+                    <font size="4" style="color: white">Bagerhat</font></p>
+                </div>
+            </div>
+                </div></div>
+            
+             <p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Our Preference</center></font>
+                
+                <font size="5" style="margin-left: 5px; color:brown; font-weight: bold">
+                    <center>Out of The Country</center>
+                </font>
+                <br>
+            </p>
+           
+            <div class="background_right_ash_box4">
+            <div class="background_right_ash_box4_2">
+               <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/eiffel%20tower.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Eiffel Tower</font>
+                    <br><br>
+                    <font size="4" style="color: white">Paris</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/Giza.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Giza Pyramid</font>
+                    <br><br>
+                    <font size="4" style="color: white">Egypt</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/grand%20palace.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Grand Palace</font>
+                    <br><br>
+                    <font size="4" style="color: white">Bangkok</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/La%20Sagrada%20Familia.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">La Sagrada Familia</font>
+                    <br><br>
+                    <font size="4" style="color: white">Barcelona</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/mount%20fuji.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Mount Fuji</font>
+                    <br><br>
+                    <font size="4" style="color: white">Japan</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/neuschwanstein%20castle.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Neuschwanstein Castle</font>
+                    <br><br>
+                    <font size="4" style="color: white">Germany</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/tower%20of%20london.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Tower of London</font>
+                    <br><br>
+                    <font size="4" style="color: white">London</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="place_description.html">
+                        <img src="images/tours/Preference/ubud%20bali.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Ubud,Bali</font>
+                    <br><br>
+                    <font size="4" style="color: white">Indonesia</font></p>
+                </div>
+            </div>
+                </div></div>
+                
+        </div>
+       <div class="opacity_box2"></div>
+                    
+                    <div class="lower_blue_box2">
+                    <br><br>
+                        <p>
+                        <font size="5" style="margin-left: 150px; color: white">CONTACT US</font><font size="5" style="margin-left: 300px; color: white">SUBSCRIBE NEWSLETTER</font>
+                        <br><br>
+                        <font size="4" style="margin-left: 150px; color: white">Dhaka</font>
+                            <font size="5" style="margin-left: 400px; color: white">
+                                <input type="text" name="email" placeholder="Your email address" size="40px 10px" maxlength="50" id="email" >
+                        </font>
+                        <input type="submit" value="Submit">
+                        <br><br>
+                        <font size="4" style="margin-left: 150px; color: white">Bangladesh</font>
+                        </p>
+                    </div>
+    </body>
+</html>

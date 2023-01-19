@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travelling agency BD Hotel Page</title> 
+        <link rel="stylesheet" href="hotels.css">
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .checked{color: orange;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+               <div class="opacity_box_heading">
+                <p>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <font size="11" style="margin-left: 140px; color:white; font-weight: bold">Hotels For You..</font>
+                </p>
+            </div>
+             <div class="logo_box"><img src="images/logo9.png"  style="width: 170px"></div>
+            <div class="opacity_box1">
+               <div class="wrapper">
+               <h3>
+                   <a href="main.html"><span style="color: white ;margin-right: 1em">
+                      <div class="text_h">Home</div>
+                   </span></a>
+                   <p></p>
+                   <span style="margin-right: 1em;margin-: 2em">
+                       <div class="t_dropdown">
+                       <div class="text_h">
+                           Tours
+                           <div class="t_dropdown-content" style="left:0;">
+                            <a href="tours.html">Places</a>
+                            <a href="activities.html">Activities</a>
+                           </div>
+                        </div>
+                       </div>
+                       </span> 
+                   <p></p>
+                   <a href="hotels.html"><span style="margin-top: 2em; margin-right: 1em">
+                       <div class="text_h">Hotels</div>
+                       </span></a>
+                   <p></p>
+                   <a href="packages.html"><span style="margin-right: 1em">
+                       <div class="text_h">Packages</div>
+                       </span></a>
+                   <p></p>
+                   <a href="login.html"><span style="margin-right: 1em">
+                       <div class="text_h">Book</div>
+                       </span></a>
+                   <p></p>
+                   <span style="margin-right: 1em">
+                       <div class="text_h">Blog</div>
+                   </span>
+                   <p></p>
+                   <a href="about.html"><span style="margin-right: 1em">
+                       <div class="text_h">About</div>
+                       </span></a>
+                   <p></p>
+                   <a href="connect.html"><span style="color: white;margin-right: 1em">
+                       <div class="text_h">Contact</div>
+                   </span></a>
+               </h3>
+                </div>
+            </div>
+            <div class="opacity_box2"></div>
+        </div>
+        
+        
+        <div class="background_box">
+           <div class="background_left_box">
+                <div class="selection_box_outside">
+                    <p>
+                        <br>
+                        <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Select Place</font>
+                      <br>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;"> 
+                            <option value="7000">None</option>
+                            <option value="500">America</option>
+                            <option value="500">Bangladesh</option>
+                            <option value="7000">Egypt</option>
+                            <option value="1000">England</option>
+                            <option value="2000">Greece</option>
+                            <option value="5000">India</option>
+                            <option value="7000">Japan</option>
+                            <option value="10000">Maldives</option>
+                            <option value="7000">Nepal</option>
+                            <option value="7000">Thailand</option>
+                        </select>
+                        
+                        <br><br><br>
+                          <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Price Range</font>
+                        <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price From:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">   
+                            <option value="500">None</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                        </select>
+                            <br>
+                        <font size="3" style="margin-left: 5px; color:white; font-weight: bold">Price To:</font>
+                        <select id="price" style=" width: 180px; background-color: rgba(0,0,0,0.2); color: white; padding: 16px; font-size: 16px; border:4px double #DEBB07; cursor: pointer;">      
+                            <option value="1000">1000</option>
+                            <option value="2000">3000</option>
+                            <option value="5000">5000</option>
+                            <option value="7000">7000</option>
+                            <option value="10000">10000</option>
+                            <option value="15000">15000</option>
+                        </select>
+                        
+                       <br><br><br>
+                        
+                                  <font size="5" style="margin-left: 5px; color:white; font-weight: bold">Review Rating</font>
+                    <br>
+                    <label ><input type="checkbox" checked="checked" name=="rating" value="five_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="four_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="three_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="two_star">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <br>
+                    <label ><input type="checkbox" name=="rating" value="one_star">
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                        
+                  
+                        
+                        <br><br>
+                    <div class="button">Find Hotel</div>
+                    </p>
+                
+                </div>       
+       
+            </div>
+            
+    
+        <div class="background_right_box">
+            <p>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Top Visited Hotels</center></font>
+                <br><br><br>
+            </p>
+         
+            <div class="background_right_ash_box1">
+            <div class="background_right_ash_box1_2">
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/burz_al_arab.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Burz Al Arab</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dubai</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/the_westin.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">The Westin</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/marina_bay_sand.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Marina Bay Sand</font>
+                    <br><br>
+                    <font size="4" style="color: white">Singapore</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/browns_hotel.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Brown's Hotel</font>
+                    <br><br>
+                    <font size="4" style="color: white">London</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/the_plaza_hotel.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">The Plaza Hotel</font>
+                    <br><br>
+                    <font size="4" style="color: white">New York City</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/the_beverly_hills_hotel.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">The Beverly Hills Hotel</font>
+                    <br><br>
+                    <font size="4" style="color: white">Los Angeles</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/the_brando.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">The Brando</font>
+                    <br><br>
+                    <font size="4" style="color: white">Tahiti</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/radisson_blu_dhaka_water_garden.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Radisson Blu Water Garden</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            </div>
+            <div>
+                </div></div>
+            
+            
+            
+            <p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Our Preference</center></font>
+                
+                <font size="5" style="margin-left: 5px; color:brown; font-weight: bold">
+                    <center>In The Country</center>
+                </font>
+                <br>
+            </p>
+           
+            <div class="background_right_ash_box3">
+            <div class="background_right_ash_box3_2">
+                <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/radisson_blu_dhaka_water_garden.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Radisson Blu Water Garden</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/grand_sultan_tea_resort.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Grand Sultan Tea Resort</font>
+                    <br><br>
+                    <font size="4" style="color: white">Sreemangal</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/le_meridien.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Le Meridian</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/sarah_resort.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Sarah Resort</font>
+                    <br><br>
+                    <font size="4" style="color: white">Gazipur</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/long_beach_hotel.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Long Beach Hotel</font>
+                    <br><br>
+                    <font size="4" style="color: white">Cox's Bazar</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/FARS_hotel_and_resort.jpeg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">FARS Hotel & Resort</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/best_western_plus_maple_leaf.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Best Western Plus Maple Leaf</font>
+                    <br><br>
+                    <font size="4" style="color: white">Dhaka</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/hilltaj_resort.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Hilltaj Resort</font>
+                    <br><br>
+                    <font size="4" style="color: white">Rangamati</font></p>
+                </div>
+            </div>
+                </div></div>
+            
+             <p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <font size="10" style="margin-left: 5px; color:brown; font-weight: bold"><center>Our Preference</center></font>
+                
+                <font size="5" style="margin-left: 5px; color:brown; font-weight: bold">
+                    <center>Out of The Country</center>
+                </font>
+                <br>
+            </p>
+           
+            <div class="background_right_ash_box4">
+            <div class="background_right_ash_box4_2">
+               <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/5_canaves_oia_epitome.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Canaves Oia Epitome</font>
+                    <br><br>
+                    <font size="4" style="color: white">Santorini, Greece</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/1_singita_sabi_sand.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Singita Sabi Sand</font>
+                    <br><br>
+                    <font size="4" style="color: white">South Africa</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/3_paradise_luxury_resort.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Paradise Luxury Resort</font>
+                    <br><br>
+                    <font size="4" style="color: white">Fiji</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/2_lapa_rios_lodge.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Lapa Rios Lodge</font>
+                    <br><br>
+                    <font size="4" style="color: white">Costa Rica</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/8_the_oberoi.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">The Oberoi</font>
+                    <br><br>
+                    <font size="4" style="color: white">Mumbai</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/4_six_senses_yao_noi.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                <div class="middle">
+                    <p><font size="5" style="color: white">Six Senses Yao Noi</font>
+                    <br><br>
+                    <font size="4" style="color: white">Thailand</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/6_southern_ocean_lodge.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Southern Ocean Lodge</font>
+                    <br><br>
+                    <font size="4" style="color: white">Australia</font></p>
+                </div>
+            </div>
+            <div class="initial_image_box">
+                <div class="initial_image_box. i_box">
+                    <a href="hotel_description.html">
+                        <img src="images/hotel/preference/7_londolozi.jpg" style="width: 295px;height: 290px"></a>
+                </div>
+                 <div class="middle">
+                    <p><font size="5" style="color: white">Londolozi</font>
+                    <br><br>
+                    <font size="4" style="color: white">South Africa</font></p>
+                </div>
+            </div>
+                </div></div>
+                
+        </div>
+       <div class="opacity_box2"></div>
+                    
+                    <div class="lower_blue_box2">
+                    <br><br>
+                        <p>
+                        <font size="5" style="margin-left: 150px; color: white">CONTACT US</font><font size="5" style="margin-left: 300px; color: white">SUBSCRIBE NEWSLETTER</font>
+                        <br><br>
+                        <font size="4" style="margin-left: 150px; color: white">Dhaka</font>
+                            <font size="5" style="margin-left: 400px; color: white">
+                                <input type="text" name="email" placeholder="Your email address" size="40px 10px" maxlength="50" id="email" >
+                        </font>
+                        <input type="submit" value="Submit">
+                        <br><br>
+                        <font size="4" style="margin-left: 150px; color: white">Bangladesh</font>
+                        </p>
+                    </div>
+    </body>
+</html>

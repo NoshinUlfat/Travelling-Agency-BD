@@ -1,0 +1,286 @@
+ body{
+                margin: 0;
+                padding: 0;
+                font-family: arial;
+            }
+            .wrapper{
+                position: absolute;
+                top: 7%;
+                left: 2%;          
+            }
+            .wrapper h3{
+                padding: 0;
+                margin: 0;
+                color: #fff;
+            }
+            .opacity_box{
+                top:0%;
+                background: rgba(0,0,0,0.3);
+                width:150px;
+                height: 800px;
+            }
+.logo_box{
+    position: absolute;
+    top:0%;
+    left: 88%;
+    height: 150px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0);
+}
+.t_dropdown{
+    position: relative;
+    display: inline-block;
+}
+.t_dropdown-content{
+    display: none;
+    position: absolute;
+    right: 100%;
+    background-color: darkblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.t_dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.t_dropdown-content a:hover {background-color: #130E62;}
+
+.t_dropdown:hover .t_dropdown-content {
+  display: block;
+}
+            .box{
+                position: absolute;
+                top:82%;
+                height: 135px;
+                width: 1520px;
+                background: rgba(0, 0, 0, 0.7);
+            }
+            .mini_box{
+                position: absolute;
+                top:75%;
+                height: 54px;
+                width: 370px;
+                background: rgba(0, 0, 0, 0.5);
+                border-color: #241E75;
+                border-width: medium;
+            }
+            .input_box1{
+                top:92%;
+                display: inline;
+                color:white;
+                width:1000px;
+                height: 70px;
+            }
+            .input_box2{
+                display: inline;
+                width:1000px;
+            }
+            input{
+                background: rgba(0,0,0,0.2);
+                border: none;
+                position: relative;
+                display: inline;
+                outline: none;
+                margin: 0 auto;
+                padding: 10px;
+                color: white;
+            }
+            .container{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                animation: animate 16s ease-in-out infinite;
+                background-size: cover;
+            }
+            @keyframes animate{
+                0%,100%{
+                    background-image: url("images/main/1.jpg");
+                }
+                25%{
+                    background-image: url("images/main/2.jpg");
+                }
+                50%{
+                    background-image: url("images/main/3.jpg");
+                }
+                75%{
+                    background-image: url("images/main/4.jpg");
+                }
+            }
+            .box_2{
+                position: absolute;
+                top:100%;
+                height: 4000px;
+                width: 1520px;
+                background-color: white;
+            }
+            .ash_box{
+                position: absolute;
+                top:4%;
+                height: 500px;
+                width: 1520px;
+                background-color: #B3BDB3;
+            }
+            .radius{
+                position: relative;
+            }
+            .radius img{
+                border-radius: 60%;
+                margin-left: 125px;
+            }
+           .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+               -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            .initial_image_box{
+                position: relative;
+                width: 295px;
+                height: 290px;
+                background: #B3BDB3;
+                margin: 2.5px;
+                margin-left: 2.5px;
+                box-sizing: border-box;
+                display: inline-block;
+            }
+            .initial_image_box. i_box{
+                position: relative;
+                overflow: hidden;
+            }
+            .initial_image_box. i_box img{
+                max-width: 100%
+                transition: transform 2s;
+            }
+            .initial_image_box:hover .i_box img{
+                opacity: 0.5;
+            }
+            .initial_image_box:hover .middle{
+                opacity: 1;
+            }
+            .initial_image_box. details{
+                position: absolute;
+                top:10px;
+                left:10px;
+                bottom: 10px;
+                right:10px;
+                background: rgba(0,0,0,0.8);
+            }
+            .slider{
+                position: absolute;
+                left: 20%;
+                top: 45%;
+                width: 900px;
+                height: 500px;
+                animation: slider 16s ease-in-out infinite;
+                background-size: cover;
+            }
+            @keyframes slider{
+                0%,100%{
+                    background-image: url("images/main/Hotel_1.jpg");
+                }
+                25%{
+                    background-image: url("images/main/Hotel_2.jpg");
+                }
+                50%{
+                    background-image: url("images/main/Hotel_3.jpg");
+                }
+                75%{
+                    background-image: url("images/main/Hotel_4.jpg");
+                }
+            }
+            .blue_box1{
+                position: absolute;
+                top:60%;
+                height: 400px;
+                width: 1536px;
+                background-color: rgba(0,0,0,0.5);
+            }
+            .blue_box_mini1{
+                position: absolute;
+                top:23%;
+                left: 7%;
+                height: 270px;
+                width: 300px;
+                background-color: rgba(0,0,0,0.2);
+                display: inline;
+            }
+            .blue_box_mini2{
+                position: absolute;
+                top:23%;
+                left: 30%;
+                height: 270px;
+                width: 300px;
+                background-color:rgba(0,0,0,0.2);
+                display: inline;
+            }
+            .blue_box_mini3{
+                position: absolute;
+                top:23%;
+                left: 53%;
+                height: 270px;
+                width: 300px;
+                background-color: rgba(0,0,0,0.2);
+                display: inline;
+            }
+            .blue_box_mini4{
+                position: absolute;
+                top:23%;
+                left: 76%;
+                height: 270px;
+                width: 300px;
+                background-color: rgba(0,0,0,0.2);
+                display: inline;
+            }
+            .light_blue_box{
+                position: absolute;
+                top:73%;
+                left:15%;
+                height: 700px;
+                width: 1000px;
+                background-color: #EFF7F7;
+            }
+            .blue_box2{
+                position: absolute;
+                top:92.8%;
+                left:13%;
+                height: 308px;
+                width: 1315px;
+                background-color: rgba(0,0,0,0.6);
+            }
+            .opacity_box2{
+                background-color:rgba(0,0,0,0.7);
+                width:200px;
+                height: 308px;
+            }
+            .button {
+                background-color: gainsboro;
+                border: none;
+                color: black;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button:hover{
+                background-color: darkgray;
+            }
+            .text_h{
+                color: white;
+            }
+            .text_h:hover{
+                color: darkgray;
+            }
